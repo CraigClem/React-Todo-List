@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
 
+/* @import "https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"; */
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +8,7 @@
 }
 
 #root {
-  height: 100vh;
+  height: 100%;
   background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
   font-family: "Poppins", sans-serif;
 }
@@ -46,13 +47,14 @@ div .todo {
 .todo button {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin: 4px;
-  padding: 5px;
+  padding: 4px;
   height: 30px;
 }
 
 .todo button:hover {
-  background-color: orange;
+  background-color: black;
 }
 
 .check-btn {
