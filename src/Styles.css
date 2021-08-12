@@ -10,6 +10,7 @@
 #root {
   height: 100%;
   background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+  background-size: cover;
   font-family: "Poppins", sans-serif;
 }
 
