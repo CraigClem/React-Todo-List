@@ -87,7 +87,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1>My Todo List</h1>
+        <h1 className="main--title">My Todo List</h1>
       </header>
       <main>
         <Input

@@ -35,7 +35,7 @@ function Input({ setInputText, inputText, todos, setTodos, setStatus }) {
 
   return (
     <form>
-      {/*//?add a value attribute of {inputText} which is an empty string so that the UI also updates on submit*/}.
+      {/*//?add a value attribute of {inputText} which is an empty string so that the UI also updates on submit*/}
       <input
         type="text"
         className="todo-input"

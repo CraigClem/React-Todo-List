@@ -1,28 +1,27 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
 /* @import "https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"; */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-#root {
-  height: 100%;
-  background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
-  background-size: cover;
   font-family: "Poppins", sans-serif;
 }
 
-html,
 body {
-  height: 100%;
+  background-color: rgb(226, 238, 238);
 }
 
 header {
-  font-family: "Poppins", sans-serif;
   display: flex;
   justify-content: center;
+  font-size: 3.5rem;
+  margin: 22px 0;
+}
+
+.main--title {
+  font-family: "Dancing Script", cursive;
+  color: rgb(64, 183, 204);
 }
 
 form {
@@ -32,23 +31,53 @@ form {
   margin-top: 50px;
 }
 
-select {
-  height: 25px;
+input {
+  border-radius: 6px;
+  background-color: rgb(221, 211, 211);
 }
 
 .todo-input {
-  border: 2px solid #ffff;
-  height: 24px;
+  border: 2px solid rgb(129, 126, 126);
+  height: 36px;
+  width: 20%;
+}
+
+.todo-btn {
+  height: 36px;
+  width: 10%;
+  border: 2px solid rgb(37, 35, 35);
+  border-radius: 4px;
+  margin: 0 8px;
+  background-color: rgb(131, 211, 131);
+}
+
+.filter-todo {
+  height: 36px;
+  width: 100%;
+  border: 2px solid rgb(37, 35, 35);
+  border-radius: 4px;
 }
 
 div .todo {
   display: flex;
-  justify-content: center;
-  margin-top: 50px;
+  flex-wrap: wrap;
+  justify-content: right;
+  align-items: center;
+  max-width: 50%;
+  min-width: 50%;
+  margin: 12px auto;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid white;
+  background-color: rgb(43, 42, 42);
+  color: white;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
 .todo li {
   list-style: none;
   margin: 4px 12px 0 0;
+  font-size: 14px;
+  text-overflow: clip;
 }
 .todo button {
   display: flex;
@@ -56,19 +85,23 @@ div .todo {
   justify-content: center;
   margin: 4px;
   padding: 4px;
-  height: 30px;
+  height: 33px;
 }
 
 .todo button:hover {
-  background-color: black;
+  opacity: 0.5;
 }
 
 .check-btn {
-  background-color: rgb(84, 190, 84);
+  background-color: rgb(30, 196, 52);
+  border-radius: 8px;
+  width: 10%;
 }
 
 .trash-btn {
-  background-color: rgb(209, 47, 47);
+  background-color: rgb(230, 74, 74);
+  border-radius: 8px;
+  width: 10%;
 }
 
 .completed {

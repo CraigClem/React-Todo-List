@@ -37,8 +37,10 @@ function Todo({ text, todo, setTodos, id, filteredTodos, date }) {
         <br />
         <hr />
       </li>
+
       <button className="check-btn" onClick={CompleteHandler}> ✅ </button>
       <button className="trash-btn" onClick={DeleteHandler}> 🗑 </button>
+
     </div>
   )
 }
